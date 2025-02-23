@@ -6,6 +6,50 @@
     <title>Asim Iqbal</title>
 </head>
 <style>
+@media (max-width: 669px) {
+    .body {
+        /* background-color: aqua; */
+        display: flex; /* Ensure flexbox is applied */
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center the items horizontally */
+        text-align: center;
+        width:100%;
+        margin:0rem 0rem;
+    }
+
+    #image {
+        order: -1; /* Moves image to the top */
+        width: 80%; /* Controls image container width */
+        height: auto; /* Keeps aspect ratio */
+        display: flex;
+        justify-content: center;
+    }
+
+    #image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #about {
+        width: 90%; /* Prevents stretching */
+        max-width: 600px; /* Limits max width */
+        text-align: center;
+    }
+    #about h1{
+        display: none;
+    }
+
+    #about p {
+        font-size: 1rem;
+        text-align: justify; /* Keeps text readable */
+    }
+    footer{
+        display: block;
+        /* background-color: black; */
+    }
+}
+
+
     body{
         background-color: rgb(72, 31, 110);
         color: white;
@@ -19,10 +63,9 @@
         /* margin:0.5rem; */
         height:3rem;
         margin:0rem;
-       
-        
-        
-    }
+       }
+
+
     h1{
         /* border:2px solid yellow; */
         width:10rem;
@@ -35,13 +78,13 @@
     }
     .menu{
         margin-left:auto;
-        margin-right: 2rem;
+        margin-right: 5rem;
         padding:0.5rem;
         /* border:2px solid gray; */
         width:30%;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        /* align-items:end; */
         /* gap:2rem; */
     }
     .menu button{
@@ -50,9 +93,9 @@
         /* background-color: cadetblue; */
         border: none;
         font-weight: bold;
-        font-size:1.1rem;
+        font-size:1rem;
         height:1.5rem;
-        width:5rem;
+        width:4rem;
         margin:0px;
         /* padding: 0.5rem; */
         /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
@@ -62,30 +105,25 @@
         background-color: rgb(87, 45, 126);
         /* font-size: 1.2rem; */
     }
-    #body{
+    .body{
         /* border:2px solid white; */
         width:100%;
         height:28rem;
-        /* margin:rem; */
-        /* width:fit-content; */
         display: flex;
         flex-direction: row;
-        margin:1rem 1rem;
        
-        /* justify-items: center; */
-        
-        /* flex-wrap: wrap; Allows items to stack on small screens */
     }
     #image{
         /* border:2px solid white; */
-        width:40%;
+        width:50%;
         height:100%;
-        border-radius: 50%;
-        /* margin:1rem 1rem; */
+        display: flex;
+        justify-content: center;
+       
     }
     #image img{
         width:80%;
-        height:90%;
+        height:100%;
         /* border-radius: 50%; */
     
     }
@@ -103,15 +141,17 @@
         font-size: 1rem;
         text-align: justify;
     }
-footer{
+    footer {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin: 1rem;
+    justify-content: flex-start; /* Aligns content to the left */
+    gap: 0.8rem; /* Adds spacing between items */
 }
-footer h3{
+
+footer p {
     font-size: 1rem;
 }
+
     
     
     
@@ -127,7 +167,7 @@ footer h3{
         <button classs ="btn">Contact</button>
      </div>
     </nav>
-    <div id="body">
+    <div class="body">
        
         <div id="about">
             <h1>Asim Iqbal</h1>
@@ -135,13 +175,11 @@ footer h3{
         </div>
         <div id="image">
             <img src ="WhatsApp_Image_2025-02-12_at_15.45.46-removebg-preview.png">
-            
-         </div>
+        </div>
     </div>
     <footer>
-        <h3>copyright@asimiqbalbaloch</h3>
-        <h3>email:  asimiqbalbaloch505@gmail.com</h3>
-        <h3>contact:  03429711001</h3>
+        <p>email:  asimiqbalbaloch505@gmail.com</p>
+        <p>contact:  03429711001</p>
     </footer>
 </body>
 </html>

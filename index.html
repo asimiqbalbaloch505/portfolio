@@ -14,33 +14,52 @@
         align-items: center; /* Center the items horizontally */
         text-align: center;
         width:100%;
+        height:10px;
         margin:0rem 0rem;
+        overflow: scroll;
+    }
+    .menu .btn{ 
+     font-size: 0.7rem;
+     /* border: 2px solid red; */
+     /* background-color: aliceblue; */
     }
 
-    #image {
+    .body #image {
         order: -1; /* Moves image to the top */
-        width: 80%; /* Controls image container width */
-        height: auto; /* Keeps aspect ratio */
+        width: 50%; /* Controls image container width */
+        height: 80%; /*Keeps aspect ratio */
         display: flex;
         justify-content: center;
+        /* border: 2px solid red; */
     }
 
-    #image img {
-        max-width: 100%;
-        height: auto;
+   .body #image img {
+        max-width:100%;
+        height:80%;
+        align-items: center;
+        /* height: 50%; */
+        /* border: 2px solid yellow; */
     }
 
-    #about {
-        width: 90%; /* Prevents stretching */
+    .body #about {
+        width: 50%; /* Prevents stretching */
+        height:80%;
         max-width: 600px; /* Limits max width */
         text-align: center;
+        font-size: 0.5rem;
+        /* border: 2px solid red; */
+        text-align: justify;
+    }
+    nav #h1{
+        font-size: 1rem;
+        /* border: 2px solid red; */
     }
     #about h1{
         display: none;
     }
 
     #about p {
-        font-size: 1rem;
+        font-size: 0.5rem;
         text-align: justify; /* Keeps text readable */
     }
     footer{
@@ -66,13 +85,13 @@
        }
 
 
-    h1{
+    #h1{
         /* border:2px solid yellow; */
         width:10rem;
         margin: 0rem;
         padding:0.5rem;
         color: rgb(255, 255, 255);
-        font-size:1.5rem;
+        font-size:1.3rem;
         height:1rem;
         margin-right: 0.5rem;
     }
@@ -159,12 +178,12 @@ footer p {
     </style>
 <body>
     <nav>
-     <h1>Asim Iqbal</h1>
+     <h1 id="h1">Asim Iqbal</h1>
      <div class="menu">
-        <button classs ="btn">Home</button>
-        <button classs ="btn">About</button>
-        <button classs ="btn">Services</button>
-        <button classs ="btn">Contact</button>
+        <button class="btn">Home</button>
+        <button class="btn">About</button>
+        <button class="btn">Services</button>
+        <button class="btn">Contact</button>
      </div>
     </nav>
     <div class="body">

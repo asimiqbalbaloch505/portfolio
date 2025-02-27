@@ -77,7 +77,9 @@
 
 
     body{
-        background-color: rgb(72, 31, 110);
+        
+        /* background-color: rgb(72, 31, 110); */
+        background-color: rgba(33, 66, 82, 0.808);
         color: white;
     }
     nav{
@@ -115,8 +117,9 @@
     }
     .menu button{
         color:rgb(255, 255, 255);
-        background-color: rgb(72, 31, 110);
-        /* background-color: cadetblue; */
+        /* background-color: rgb(72, 31, 110); */
+        /* background-color: rgba(5, 1, 1, 0.808); */
+        background-color: rgba(61, 96, 114, 0.808);
         border: none;
         font-weight: bold;
         font-size:1rem;
@@ -128,7 +131,7 @@
     }
     .menu button:hover{
         animation: forwards;
-        background-color: rgb(87, 45, 126);
+        background-color: rgb(29, 58, 92);
         /* font-size: 1.2rem; */
     }
     .body{
@@ -161,11 +164,17 @@
         width:50%;
         margin: auto;
     }
+    .body #about h1{
+        text-align: left;
+        padding-left:2rem;
+        /* border: 2px dashed gray; */
+    }
     #about p{
         margin:auto;
         padding: 2rem;
         font-size: 1rem;
         text-align: justify;
+        /* border: 2px dotted red; */
     }
     footer {
     display: flex;
@@ -196,7 +205,7 @@ footer p {
     <div class="body">
        
         <div id="about">
-            <h1>Asim Iqbal</h1>
+            <h1 id="h11">Asim Iqbal</h1>
             <p id="about-para">Asim Iqbal is a Software Engineer and Web Developer with expertise in JavaScript, Node.js, WordPress, and SEO. He delivers high-quality, user-friendly websites, prioritizing client satisfaction and competitive pricing.</p>
         </div>
         <div id="image">

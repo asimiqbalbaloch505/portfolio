@@ -10,13 +10,18 @@
     .body{
         /* background-color: aqua; */
         display: flex; /* Ensure flexbox is applied */
-        flex-direction: column; /* Stack elements vertically */
-        align-items: center; /* Center the items horizontally */
-        text-align: center;
-        width:100%;
+        flex-direction: column!important; /* Stack elements vertically */
+        align-items: left; /* Center the items horizontally */
+        text-align: left;
+        width:90%;
         height:20rem;
-        margin:0rem 0rem;
         overflow: scroll;
+        margin-left: 0rem;
+        /* border: 2px solid gold; */
+    }
+    nav{
+        /* border: 2px solid green; */
+        width:90%;
     }
     .menu .btn{ 
      font-size: 0.7rem;
@@ -26,51 +31,81 @@
 
     .body #image {
         order: -1; /* Moves image to the top */
-        width: 50%; /* Controls image container width */
-        height: 50%; /*Keeps aspect ratio */
+        width: 80%; /* Controls image container width */
+        height: 40%; /*Keeps aspect ratio */
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
+        margin-top: 0rem;
         /* border: 2px solid red; */
     }
 
    .body #image img {
         max-width:90%;
         height:50%;
-        align-items: center;
+        /* align-items:left; */
+        display: flex;
+        flex-direction: flex-start;
+        border-radius: 50%;
         /* height: 50%; */
-        /* border: 2px solid yellow; */
+        border: 2px solid white;
+    }
+    .body #about h1{
+        padding-left: 0.5rem!important;
+        font-size: 1.3rem!important;
     }
  .body #about p{
     text-align: center;
         font-size: 3.5rem;
+        margin-left: 0rem!important;
+        padding-left: 0.5rem!important;
         /* border: 2px solid red; */
         /* text-align: justify; */
  }
     .body #about {
-        width: 50%; /* Prevents stretching */
-        height:50%;
-        max-width: 600px; /* Limits max width */
+        width: 80%!important; /* Prevents stretching */
+        height: auto !important;
+        margin-left: 0rem!important;
+        max-width:none;
+        text-align: left;
+        padding: 0rem;
+        /* border: 2px solid red; */
         
     }
     nav #h1{
-        font-size: 1rem;
+        display: none;
+        /* font-size: 1rem;
+        padding-left: 0.5rem;
+        margin-left: 1rem; */
         /* border: 2px solid red; */
     }
-    #about h1{
-        display: none;
+    nav .menu{ margin-left: 0rem!important;
+        margin-right: auto!important; 
+        width:80%;
+         /* border: 2px solid red; */
     }
+    nav .menu button{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+   
 
     .body #about #about-para {
         font-size: 0.8rem;
         text-align: justify; /* Keeps text readable */
+        padding-left: 1.5rem;
+        /* border:2px solid red; */
     }
     footer{
         display: flex;
         flex-direction: column;
+        width:90%;
+       /* border: 2px solid black; */
         /* background-color: black; */
     }
     footer .fp{
  font-size: 0.8rem;
+ margin-left:0rem;
+ padding-left: 0.5rem;
  
     }
 }
@@ -85,7 +120,7 @@
         /* color: black; */
     }
     nav{
-        /* border:2px solid red; */
+        /* border:2px solid white; */
         /* background-color: cadetblue; */
         display: flex;
         width:100%;
@@ -158,10 +193,11 @@
        
     }
    .body #image img{
-        width:60%;
-        height:100%;
+        width:55%;
+        height:90%;
         /* border-radius: 50%; */
-    /* border: 2px solid red; */
+        /* background-color: rgba(52, 94, 114, 0.849); */
+    /* border: 2px dotted white; */
     }
     .body #about{
         width:auto;
@@ -208,15 +244,19 @@ footer p {
      <div class="menu">
         <button class="btn">Home</button>
         <button class="btn">About</button>
-        <button class="btn">Services</button>
+        <button class="btn">Skills</button>
         <button class="btn">Contact</button>
      </div>
     </nav>
     <div class="body">
        
         <div id="about">
-            <h1 id="h11">About Me</h1>
-            <p id="about-para">Asim Iqbal is a Software Engineer and Web Developer with expertise in JavaScript, Node.js, WordPress, and SEO. He delivers high-quality, user-friendly websites, prioritizing client satisfaction and competitive pricing.</p>
+            <h1 id="h11">Asim Iqbal</h1>
+            <p id="about-para">Asim Iqbal is a Software Engineer and Web Developer with expertise in JavaScript, 
+                Node.js, WordPress, and SEO. 
+                He delivers high-quality, user-friendly websites, prioritizing client satisfaction and competitive pricing. 
+                With a strong focus on performance and modern design, he ensures seamless user experiences. 
+                His dedication to continuous learning keeps him updated with the latest industry trends.</p>
         </div>
         <div id="image">
             <img src ="WhatsApp_Image_2025-02-12_at_15.45.46-removebg-preview.png">

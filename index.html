@@ -6,6 +6,10 @@
     <title>Asim Iqbal</title>
 </head>
 <style>
+    html {
+    scroll-behavior: smooth;
+}
+
 @media (max-width: 669px) {
     .body{
         /* background-color: aqua; */
@@ -120,6 +124,12 @@
         /* color: black; */
     }
     nav{
+        position:fixed;
+        top:0;
+        left:0;
+        background-color: #1e3a50; /* New color (Dark Blue) */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
         /* border:2px solid white; */
         /* background-color: cadetblue; */
         display: flex;
@@ -157,12 +167,14 @@
         /* color:rgb(0, 0, 0); */
         /* background-color: rgb(72, 31, 110); */
         /* background-color: rgba(5, 1, 1, 0.808); */
-        background-color: rgba(72, 96, 114, 0.808);
+        background-color: rgba(48, 70, 88, 0.808);
         /* background-color:white; */
         color:white;
         border: none;
         font-weight: bold;
         font-size:1rem;
+        font-family: Arial, sans-serif;
+        transition: background-color 0.3s ease, transform 0.2s ease;
         height:1.5rem;
         width:4rem;
         margin:0px;
@@ -171,7 +183,9 @@
     }
     .menu button:hover{
         animation: forwards;
-        background-color: rgba(44, 76, 116, 0.719);
+        /* background-color: rgba(44, 76, 116, 0.719); */
+        background-color: rgba(44, 76, 116, 0.9);
+        transform: scale(1.05); /* Slightly enlarges on hover */
         /* background-color: antiquewhite; */
         /* background-color:linen */
         /* font-size: 1.2rem; */
@@ -179,59 +193,90 @@
     .body{
         /* border:2px solid white; */
         width:100%;
-        height:30rem;
+        height: auto;
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        background: linear-gradient(to right, #2C3E50, #34495E); /* Gradient Background */
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Soft Shadow */
+        margin-top:3rem;
+        /* margin-left: 0rem!important; */
        
     }
-    #image{
+   .body #image{
         /* border:2px solid white; */
-        width:50%;
-        height:100%;
+        width:40%;
+        /* height:100%; */
         display: flex;
         justify-content: center;
        
     }
    .body #image img{
-        width:55%;
-        height:90%;
+        width:80%;
+        /* height:80%; */
+        border-radius: 20px;
+        box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+        /* object-fit: cover; */
         /* border-radius: 50%; */
         /* background-color: rgba(52, 94, 114, 0.849); */
     /* border: 2px dotted white; */
     }
     .body #about{
-        width:auto;
+        width:50%;
+        font-family: "Poppins", sans-serif;
         /* border:2px solid red; */
         /* margin-left: auto; */
         text-align:center;
         width:50%;
-        margin: auto;
+        /* margin: auto; */
     }
     .body #about h1{
         text-align: left;
         padding-left:1rem;
-        font-size: 1.5rem;
+        font-size: 2rem!important;
+        font-family: Arial, sans-serif;
+        
         /* border: 2px dashed gray; */
     }
     #about p{
         margin:auto;
         padding: 1rem;
-        font-size: 1rem;
+        line-height: 1.3; /* Increases spacing for better reading */
+    font-size: 1.1rem; /* Slightly bigger for better visibility */
         text-align: justify;
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+        font-family: Arial, sans-serif;
         /* border: 2px dotted red; */
+
     }
-    footer {
+   footer {
+    background-color: #222; /* Dark background */
+    color: white;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start; /* Aligns content to the left */
-    gap: 0.5rem; /* Adds spacing between items */
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+    border-top: 3px solid #FFD700; /* Gold border */
+    font-family: "Poppins", sans-serif;
 }
 
 footer p {
     font-size: 1rem;
-    padding-left: 1rem;
+    margin: 0;
 }
+
+footer .fp {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+footer .fp i {
+    color: #FFD700; /* Gold icons */
+    font-size: 1.2rem;
+}
+
 
     
     
